@@ -1,6 +1,5 @@
 <?php
 include("header.php");
-exit();
 $customer = $servicePortal->getCustomer();
 $billingAddress = $customer->billingAddress;
 $subscription = $servicePortal->getSubscription();
