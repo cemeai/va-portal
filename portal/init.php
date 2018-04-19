@@ -8,6 +8,7 @@ $settingconfigData = parse_ini_file($settingsconfig);
 
 error_reporting(E_ALL);
 ini_set("display_errors", $configData['display_errors']);
+exit();
 
 /* Default Time zone */
 date_default_timezone_set("GMT");

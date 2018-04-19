@@ -1,5 +1,5 @@
 <?php
-include_once('init.php');exit();?>
+include_once('init.php');?>
 <!DOCTYPE html>
 <html>
     <head>
