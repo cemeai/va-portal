@@ -16,7 +16,7 @@ include_once('init.php');?>
         <div class="container">
             <div class="navbar-header pull-left">
                 <a href="index.php">
-                    <img src="assets/images/logo.png" alt="My awesome subscription service" class="navbar-brand img-responsive">
+                    <img src="assets/images/Va-logo.png" alt="My awesome subscription service" class="navbar-brand img-responsive">
                 </a>
                 <button data-target=".navbar-collapse" data-toggle="collapse" class="navbar-toggle" type="button"> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
             </div>

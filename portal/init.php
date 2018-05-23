@@ -49,8 +49,8 @@ if(isset($_GET['auth_session_id']) && isset($_GET['auth_session_token'])){
 
 
 if (!$authObj->isLoggedIn()) {
-    // header('Location: ' . getPortalLoginUrl($configData));
-    // exit;
+    header('Location: ' . getPortalLoginUrl($configData));
+    exit;
 }
 /* 
  * **** Authentication code ends here **** 

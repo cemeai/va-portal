@@ -37,7 +37,7 @@ hr{
 a,
 .btn-link{
     cursor:pointer;
-    color:#453A59;
+    color:#428bca;
 }
 a:hover,
 .btn-link:hover,
@@ -329,7 +329,7 @@ a.text-danger:hover{
 **************************************************************/
 /* Header*/
 .navbar-static-top{
-    background:#352d45;
+    background:#d8d8d8;
     color:#FFFFFF;
 }
 
@@ -737,6 +737,7 @@ a.text-danger:hover{
     .navbar > .container .navbar-brand {
         margin-left:0;
         padding-left:0;
+        width: 15%;
     }
     .navbar > .container > .navbar-header,
     .navbar > .container > .navbar-collapse ,

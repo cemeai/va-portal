@@ -97,7 +97,7 @@ $customerInvoice = $servicePortal->retrieveInvoice();
                     <?php
                     }                    
                 }               
-?>
+                ?>
             </div>
             <?php include("subscriptionInfo.php") ?>
         </div>
