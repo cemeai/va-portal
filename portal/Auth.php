@@ -63,8 +63,8 @@ class Auth {
 	 * Activate portal session API should be invoked after redirection. 'cb_auth_session_id' is Chargebee's portal session ID.
 	 */
 	public function authenticateSession($params, $configData){    
-		echo 'Hola'; exit();
 		if (isset($params['cb_auth_session_id']) && isset($params['cb_auth_session_token']) && !$this->isLoggedIn()) {
+		echo 'Hola'; exit();
 			try {
 				$this->authenticate($configData, $params);
 				$this->setSubscriptionCookie($configData);
