@@ -36,21 +36,22 @@ $successMessage = isset($_GET['success']) ? filter_input(INPUT_GET, 'success') :
 $doAction = isset($_GET['do']) ? filter_input(INPUT_GET, 'do') : null;
 $cbStatus = isset($_GET['status']) ? filter_input(INPUT_GET, 'status') : null;
 if( $doAction == "logout" || $cbStatus == "logged_out") { 
-    $authObj->logout($configData);
+	$authObj->logout($configData);
 }   
 
 if(isset($_GET['auth_session_id']) && isset($_GET['auth_session_token'])){
-    $params = array(
-        'cb_auth_session_id' => filter_input(INPUT_GET,'auth_session_id'),  
-        'cb_auth_session_token' => filter_input(INPUT_GET, 'auth_session_token')
-    );
-    $authObj->authenticateSession($params, $configData);
+	echo 'Hola'; exit();
+	$params = array(
+		'cb_auth_session_id' => filter_input(INPUT_GET,'auth_session_id'),  
+		'cb_auth_session_token' => filter_input(INPUT_GET, 'auth_session_token')
+	);
+	$authObj->authenticateSession($params, $configData);
 } 
 
 
 if (!$authObj->isLoggedIn()) {
-    header('Location: ' . getPortalLoginUrl($configData));
-    exit;
+	header('Location: ' . getPortalLoginUrl($configData));
+	exit;
 }
 /* 
  * **** Authentication code ends here **** 
