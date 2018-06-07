@@ -40,7 +40,6 @@ if( $doAction == "logout" || $cbStatus == "logged_out") {
 }   
 
 if(isset($_GET['auth_session_id']) && isset($_GET['auth_session_token'])){
-	echo 'Hola'; exit();
 	$params = array(
 		'cb_auth_session_id' => filter_input(INPUT_GET,'auth_session_id'),  
 		'cb_auth_session_token' => filter_input(INPUT_GET, 'auth_session_token')
