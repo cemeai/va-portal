@@ -77,7 +77,7 @@ class Auth {
 						"action", 
 						"do"
 					), $request_url);
-				echo $redirect_url; exit();
+				echo $request_url; exit();
 				header('Location: ' . $redirect_url);
 				exit;
 			} catch (Exception $e) {
