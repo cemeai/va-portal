@@ -64,7 +64,6 @@ class Auth {
 	 */
 	public function authenticateSession($params, $configData){    
 		if (isset($params['cb_auth_session_id']) && isset($params['cb_auth_session_token']) && !$this->isLoggedIn()) {
-		echo 'Hola'; exit();
 			try {
 				$this->authenticate($configData, $params);
 				$this->setSubscriptionCookie($configData);
@@ -78,6 +77,7 @@ class Auth {
 						"action", 
 						"do"
 					), $request_url);
+				echo $redirect_url; exit();
 				header('Location: ' . $redirect_url);
 				exit;
 			} catch (Exception $e) {
