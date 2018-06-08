@@ -21,7 +21,6 @@ class Auth {
 			$subscriptionDetails[] = $value;
 		}        
 		$subscriptionDetails = $subscriptionDetails[0];
-		print_r($subscriptionDetails); exit();
 		$subscription = $subscriptionDetails->subscription();
 		$this->setSubscriptionId($subscription->id);
 				
@@ -33,6 +32,7 @@ class Auth {
 			$configData['COOKIE_SECURE'], 
 			$configData['COOKIE_HTTPONLY']
 		);
+		print_r($_COOKIE); exit();
 	}
 
 	/*
