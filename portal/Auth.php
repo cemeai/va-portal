@@ -31,7 +31,7 @@ class Auth {
 			$configData['COOKIE_DOMAIN'], 
 			$configData['COOKIE_SECURE'], 
 			$configData['COOKIE_HTTPONLY']
-		));
+		)); exit();
 	}
 
 	/*
