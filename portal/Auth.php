@@ -14,7 +14,6 @@ class Auth {
 					"token" => $params['cb_auth_session_token']));
 		
 		$linked_customers = $result->portalSession()->linkedCustomers;
-		print_r($linked_customers); exit();
 		$cb_customer_email = $linked_customers[0]->email;
 		$customerId = $result->portalSession()->customerId;
 		$listOfSubscription = ChargeBee_Subscription::subscriptionsForCustomer($customerId);
@@ -22,6 +21,7 @@ class Auth {
 			$subscriptionDetails[] = $value;
 		}        
 		$subscriptionDetails = $subscriptionDetails[0];
+		print_r($subscriptionDetails); exit();
 		$subscription = $subscriptionDetails->subscription();
 		$this->setSubscriptionId($subscription->id);
 				
