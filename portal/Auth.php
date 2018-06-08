@@ -24,15 +24,14 @@ class Auth {
 		$subscription = $subscriptionDetails->subscription();
 		$this->setSubscriptionId($subscription->id);
 				
-		setcookie('cb_portal_session_id', 
+		var_dump(setcookie('cb_portal_session_id', 
 			$params['cb_auth_session_id'], 
 			time() + 60 *60, 
 			$configData['COOKIE_PATH'], 
 			$configData['COOKIE_DOMAIN'], 
 			$configData['COOKIE_SECURE'], 
 			$configData['COOKIE_HTTPONLY']
-		);
-		var_dump($_COOKIE['cb_portal_session_id']); exit();
+		));
 	}
 
 	/*
