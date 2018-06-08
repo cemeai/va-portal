@@ -14,6 +14,7 @@ class Auth {
 					"token" => $params['cb_auth_session_token']));
 		
 		$linked_customers = $result->portalSession()->linkedCustomers;
+		print_r($linked_customers); exit();
 		$cb_customer_email = $linked_customers[0]->email;
 		$customerId = $result->portalSession()->customerId;
 		$listOfSubscription = ChargeBee_Subscription::subscriptionsForCustomer($customerId);
@@ -77,7 +78,7 @@ class Auth {
 						"action", 
 						"do"
 					), $request_url);
-				echo $request_url; exit();
+				// echo $request_url; exit();
 				header('Location: ' . $redirect_url);
 				exit;
 			} catch (Exception $e) {
