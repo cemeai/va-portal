@@ -32,7 +32,7 @@ class Auth {
 			$configData['COOKIE_SECURE'], 
 			$configData['COOKIE_HTTPONLY']
 		);
-		print_r($_COOKIE['cb_portal_session_id']); exit();
+		var_dump($_COOKIE['cb_portal_session_id']); exit();
 	}
 
 	/*
